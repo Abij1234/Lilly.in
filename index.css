@@ -1,0 +1,150 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins',sans-serif;
+}
+
+
+.banner{
+  width: 100%;
+  heigh: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 140%;
+  pointer-events: none;
+}
+
+.banner .log{
+  width: 150px;
+  height: 100px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.banner .lilly{
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner .lilly h1
+{
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 4.5em;
+  color: #0e3742;
+  width: 100%;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+  line-height: 0.70em;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate
+{
+  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+  {
+    color: #0e3742;
+    box-shadow: none;
+  }
+  18%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+  {
+    color: #efff;
+    text-shadow: 0 0 10px #03bcfa 0 0 20px #03bcfa, 0 0 40px #03bcfa, 0 0 80px #03bcfa, 0 0 160px #03bcfa;
+  }
+}
+
+.location
+{
+  padding-top: 40px;
+  color: orange;
+}
+
+.contact{
+  width: 200px;
+  height: 80px;
+  margin-top: 40px;
+  margin-left: 80px;
+  background:
+rgba( 255, 255, 255, 0.45 );
+backdrop-filter:
+blur( 1.5px );
+-webkit-backdrop-filter:
+blur( 1.5px );
+border-radius:
+10px;
+border:
+1px solid rgba( 255, 255, 255, 0.18 );
+box-shadow: 0 0 10px #d6cd18,
+            0 0 20px #d6cd18,
+            0 0 40px #d6cd18,
+            0 0 60px #d6cd18,
+            0 0 80px #d6cd18,
+            0 0 100px #d6cd18;
+animation: animatecon 6s linear infinite;
+}
+
+@keyframes animatecon
+{
+  0%
+  {
+    filter: hue-rotate(0deg);
+  }
+  100%
+  {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.items{
+  width: 200px;
+  height: 200px;
+  margin-left: 80px;
+  margin-top: 60px;
+  background:
+rgba( 255, 255, 255, 0.7 );
+box-shadow:
+0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter:
+blur( 4px );
+-webkit-backdrop-filter:
+blur( 4px );
+border-radius:
+10px;
+border:
+1px solid rgba( 255, 255, 255, 0.18 );
+box-shadow: 0 0 10px #d6cd18,
+            0 0 20px #d6cd18,
+            0 0 40px #d6cd18,
+            0 0 60px #d6cd18,
+            0 0 80px #d6cd18,
+            0 0 100px #d6cd18;
+animation: animatedet 6s linear infinite;
+}
+
+@keyframes animatedet
+{
+  0%
+  {
+    filter: hue-rotate(0deg);
+  }
+  100%
+  {
+    filter: hue-rotate(360deg);
+  }
+
+}
